@@ -1,0 +1,5 @@
+	steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/my-project-34331ds/github.com/rajaaprakash/myrepo:$SHORT_SHA', '.' ]
+images:
+- 'gcr.io/my-project-34331ds//github.com/rajaaprakash/myrepo:$SHORT_SHA-image'
